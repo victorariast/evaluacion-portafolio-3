@@ -2,7 +2,7 @@
 USE ep3;
 
 -- Eliminar tablas
-DROP TABLE IF EXISTS detallesPedidos;
+DROP TABLE IF EXISTS detalles_pedidos;
 DROP TABLE IF EXISTS pedidos;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS clientes;
@@ -11,7 +11,6 @@ DROP TABLE IF EXISTS clientes;
 CREATE TABLE clientes(
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
-    apellido VARCHAR(100),
     direccion VARCHAR(100) NOT NULL,
     correo_electronico VARCHAR(100) UNIQUE NOT NULL,
     telefono VARCHAR(20)

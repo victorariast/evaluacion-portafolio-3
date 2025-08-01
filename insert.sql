@@ -7,17 +7,17 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 -- Clientes
 
-INSERT INTO clientes (nombre, apellido, direccion, correo_electronico, telefono) VALUES
-('Juan', 'Pérez', 'Calle 123', 'juan.perez@mail.com', '555-1234'),
-('Laura', 'Gómez', 'Calle 456', 'laura.gomez@mail.com', '555-5678'),
-('Carlos', 'Sánchez', 'Av. Central 789', 'carlos.sanchez@mail.com', '555-9101'),
-('Ana', 'López', 'Pasaje 12', 'ana.lopez@mail.com', '555-1122'),
-('Mario', 'Rojas', 'Calle Norte 15', 'mario.rojas@mail.com', '555-2233'),
-('Lucía', 'Martínez', 'Calle Sur 8', 'lucia.martinez@mail.com', '555-3344'),
-('Pedro', 'Torres', 'Av. Principal 99', 'pedro.torres@mail.com', '555-4455'),
-('Elena', 'Díaz', 'Calle Este 21', 'elena.diaz@mail.com', '555-5566'),
-('Ricardo', 'Morales', 'Calle Oeste 7', 'ricardo.morales@mail.com', '555-6677'),
-('Valeria', 'Fernández', 'Av. Bosque 34', 'valeria.fernandez@mail.com', '555-7788');
+INSERT INTO clientes (nombre, direccion, correo_electronico, telefono) VALUES
+('Juan Pérez', 'Calle 123', 'juan.perez@mail.com', '555-1234'),
+('Laura Gómez', 'Calle 456', 'laura.gomez@mail.com', '555-5678'),
+('Carlos Sánchez', 'Av. Central 789', 'carlos.sanchez@mail.com', '555-9101'),
+('Ana López', 'Pasaje 12', 'ana.lopez@mail.com', '555-1122'),
+('Mario Rojas', 'Calle Norte 15', 'mario.rojas@mail.com', '555-2233'),
+('Lucía Martínez', 'Calle Sur 8', 'lucia.martinez@mail.com', '555-3344'),
+('Pedro Torres', 'Av. Principal 99', 'pedro.torres@mail.com', '555-4455'),
+('Elena Díaz', 'Calle Este 21', 'elena.diaz@mail.com', '555-5566'),
+('Ricardo Morales', 'Calle Oeste 7', 'ricardo.morales@mail.com', '555-6677'),
+('Valeria Fernández', 'Av. Bosque 34', 'valeria.fernandez@mail.com', '555-7788');
 
 
 -- Productos
@@ -58,83 +58,68 @@ INSERT INTO pedidos (id_cliente, fecha_pedido, estado_pedido) VALUES
 -- Detalles
 
 -- Pedido 1
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (1, 1, 1, 850.00),
 (1, 3, 2, 51.00);
 
 -- Pedido 2
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (2, 2, 1, 55.99);
 
 -- Pedido 3
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (3, 4, 1, 180.00),
 (3, 5, 1, 210.75);
 
 -- Pedido 4
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (4, 6, 1, 120.99);
 
 -- Pedido 5
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (5, 7, 2, 190.98),
 (5, 10, 1, 89.99);
 
 -- Pedido 6
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (6, 1, 1, 850.00);
 
 -- Pedido 7
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (7, 9, 1, 65.00);
 
 -- Pedido 8
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (8, 8, 1, 49.00),
 (8, 3, 1, 25.50);
 
 -- Pedido 9
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (9, 2, 2, 111.98);
 
 -- Pedido 10
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (10, 5, 1, 210.75),
 (10, 4, 1, 180.00);
 
 -- Pedido 11
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
-(11, 3, 2, 51.00);
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
+(11, 9, 2, 130.00);
 
 -- Pedido 12
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (12, 6, 1, 120.99);
 
 -- Pedido 13
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (13, 8, 1, 49.00),
 (13, 9, 1, 65.00);
 
 -- Pedido 14
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
 (14, 10, 1, 89.99);
 
 -- Pedido 15
-INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto)
-VALUES
-(15, 7, 1, 95.49),
+INSERT INTO detalles_pedidos (id_pedido, id_producto, cantidad, monto) VALUES
+(15, 8, 1, 49.00),
 (15, 2, 1, 55.99);
